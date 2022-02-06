@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculatrice</string>
+    <string name="op_plus">+</string>
+    <string name="op_moins">-</string>
+    <string name="op_fois">*</string>
+    <string name="op_div">/</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SendToMultiplieActivities</string>
+    <string name="form_name">Nom</string>
+    <string name="form_prenom">Prenom</string>
+    <string name="form_phone">0101010101</string>
+    <string name="form_address">Adresse</string>
+    <string name="form_zipcode">47230</string>
+    <string name="form_ville">Ville</string>
+
+
+</resources>
