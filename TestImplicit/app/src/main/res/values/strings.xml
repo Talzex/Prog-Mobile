@@ -3,6 +3,10 @@
     <string name="sms">SMS</string>
     <string name="mms">MMS</string>
     <string name="appel">Appel</string>
+    <string name="hintphonenumber">Phone Number</string>
     <string name="web">Web</string>
+    <string name="hintweb">Url</string>
     <string name="map">Map</string>
+    <string name="hintmap1">Latitude</string>
+    <string name="hintmap2">Longitude</string>
 </resources>
