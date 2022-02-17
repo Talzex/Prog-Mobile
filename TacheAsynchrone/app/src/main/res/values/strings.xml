@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TacheAsynchrone</string>
+    <string name="button_getdata">GetData</string>
+    <string name="hint_city">City</string>
+    <string name="tempcelsius">Température : </string>
+    <string name="wetherdesc">Description : </string>
+    <string-array name="cities_array">
+        <item>Paris</item>
+        <item>Bordeaux</item>
+        <item>Toulouse</item>
+        <item>New York</item>
+        <item>Pas de la Casa</item>
+    </string-array>
+</resources>
