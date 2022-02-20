@@ -2,39 +2,36 @@ package com.example.tacheasynchrone
 
 
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.AsyncTask
-import java.io.BufferedReader
 import java.io.IOException
-import java.io.InputStreamReader
-import java.lang.StringBuilder
+import java.io.InputStream
 import java.net.HttpURLConnection
 import java.net.URL
 
-class GetData2 : AsyncTask<URL, String, Bitmap>() {
-    override fun doInBackground(vararg uri: String?): String? {
-        val responseString = ""
+
+class GetData2 : AsyncTask<String, Void, Bitmap>() {
+    override fun doInBackground(vararg uri: String?): Bitmap? {
         var url: URL? = null
-        val response = StringBuilder()
+        var bmp : Bitmap? = null
         try {
             url = URL(uri[0])
             val httpconn: HttpURLConnection = url.openConnection() as HttpURLConnection
             if (httpconn.getResponseCode() === HttpURLConnection.HTTP_OK) {
-                val input = BufferedReader(InputStreamReader(httpconn.getInputStream()), 8192)
-                var strLine: String? = null
-                while (input.readLine().also { strLine = it } != null) {
-                    response.append(strLine)
-                }
-                input.close()
+                val `is`: InputStream = httpconn.getInputStream()
+                bmp = BitmapFactory.decodeStream(`is`)
+               if(bmp != null){
+                   return bmp
+               }
             }
         } catch (e: IOException) {
             e.printStackTrace()
         }
-        return response.toString()
+        return bmp
     }
 
     override fun onPostExecute(result: Bitmap?) {
         super.onPostExecute(result)
         //Do anything with response..//
     }
-
 }

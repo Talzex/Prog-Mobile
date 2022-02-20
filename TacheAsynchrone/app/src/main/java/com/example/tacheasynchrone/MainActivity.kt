@@ -1,14 +1,9 @@
 package com.example.tacheasynchrone
 
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.*
 import org.json.JSONObject
-import java.util.concurrent.Executors
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,14 +33,16 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 val meteourl =
-                    "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=" + apiKey + "&q=" + selectedcity + "&num_of_days=2&tp=3&format=JSON"
+                    "https://api.worldweatheronline.com/premium/v1/weather.ashx?key=" + apiKey + "&q=" + selectedcity + "&num_of_days=2&tp=3&format=JSON"
                 val jsonmeteo = JSONObject(gt.execute(meteourl).get())
                 val temp_c = jsonmeteo.getJSONObject("data").getJSONArray("current_condition").getJSONObject(0).getInt("temp_C")
                 val weather_desc = jsonmeteo.getJSONObject("data").getJSONArray("current_condition").getJSONObject(0).getJSONArray("weatherDesc").getJSONObject(0).getString("value")
                 var img_url = jsonmeteo.getJSONObject("data").getJSONArray("current_condition").getJSONObject(0).getJSONArray("weatherIconUrl").getJSONObject(0).getString("value")
+
                 temperature.text = "Température : $temp_c"
                 desc.text = "Description : $weather_desc"
-
+                val image = GetData2();
+                img.setImageBitmap(image.execute(img_url).get())
                 gt = GetData()
             }
         } catch (e : Exception){
