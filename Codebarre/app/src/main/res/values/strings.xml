@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Codebarre</string>
+    <string name="text_scan">SCAN</string>
+    <string name="text_title">Titre : </string>
+    <string name="text_autor">Auteur : </string>
+    <string name="text_year">Année : </string>
+    <string name="text_collec">Collection : </string>
+    <string name="text_langue">Langue : </string>
+    <string name="text_editor">Editeur : </string>
+    <string name="text_asin">Asin : </string>
+</resources>
