@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjetTaquin</string>
+    <string name="text_title_game">JEU DU TAQUIN</string>
+    <string-array name="difficulty">
+        <item>Facile - 3x3</item>
+        <item>Intermédiaire - 4x4</item>
+        <item>Difficile - 5x5</item>
+    </string-array>
+    <string name="button_begin">Commencer !</string>
+</resources>

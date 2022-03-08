@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjetTaquin</string>
+    <string name="text_title_game">TAQUIN GAME</string>
+    <string-array name="difficulty">
+        <item>Easy - 3x3</item>
+        <item>Medium - 4x4</item>
+        <item>Hard - 5x5</item>
+    </string-array>
+    <string name="button_begin">Start !</string>
+</resources>
