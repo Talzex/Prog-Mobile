@@ -8,4 +8,7 @@
         <item>Difficile - 5x5</item>
     </string-array>
     <string name="button_begin">Commencer !</string>
+    <string name="Duree">Durée -</string>
+    <string name="yourscore">Votre Score:</string>
+    <string name="bestscore">Meilleurs Scores:</string>
 </resources>

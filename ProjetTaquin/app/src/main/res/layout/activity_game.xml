@@ -6,30 +6,25 @@
     android:layout_height="match_parent">
 
     <GridView
-        android:id="@+id/gridiew"
+        android:id="@+id/gridview"
         android:layout_width="wrap_content"
-        android:layout_height="381dp"
+        android:layout_height="400dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="118dp"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginBottom="44dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/gridiew"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Chronometer
         android:id="@+id/simpleChronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="182dp"
         android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

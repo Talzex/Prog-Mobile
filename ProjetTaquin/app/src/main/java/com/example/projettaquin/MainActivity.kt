@@ -10,10 +10,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener,
     AdapterView.OnItemClickListener, View.OnClickListener {
     var level = -1
     var image = -1
-    private val imagesID : Array<Int> = arrayOf(R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground,)
+    private val imagesID : Array<Int> = arrayOf(R.drawable.android,R.drawable.html5,R.drawable.fq20,R.drawable.cascade)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

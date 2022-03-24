@@ -7,4 +7,7 @@
         <item>Hard - 5x5</item>
     </string-array>
     <string name="button_begin">Start !</string>
+    <string name="Duree">Time - </string>
+    <string name="yourscore">Your Score:</string>
+    <string name="bestscore">High Scores:</string>
 </resources>

@@ -21,6 +21,11 @@
             android:name=".GameActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="false">
+        </activity>
+
     </application>
 
 </manifest>
