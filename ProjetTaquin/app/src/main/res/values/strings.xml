@@ -10,4 +10,5 @@
     <string name="Duree">Time - </string>
     <string name="yourscore">Your Score:</string>
     <string name="bestscore">High Scores:</string>
+    <string name="mainmenu">Main Menu</string>
 </resources>

@@ -11,4 +11,5 @@
     <string name="Duree">Durée -</string>
     <string name="yourscore">Votre Score:</string>
     <string name="bestscore">Meilleurs Scores:</string>
+    <string name="mainmenu">Menu Principal</string>
 </resources>

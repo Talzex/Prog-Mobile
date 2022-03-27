@@ -14,11 +14,11 @@ class ListViewAdapter(c: Context, listScore: ArrayList<String>) : BaseAdapter() 
     }
 
     override fun getItem(p0: Int): Any {
-        TODO("Not yet implemented")
+        return mscoreList[p0]
     }
 
     override fun getItemId(p0: Int): Long {
-        TODO("Not yet implemented")
+        return p0.toLong()
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
@@ -28,9 +28,7 @@ class ListViewAdapter(c: Context, listScore: ArrayList<String>) : BaseAdapter() 
         } else {
             textView = p1 as TextView
         }
-
         textView.text = mscoreList[p0]
-
         return textView
     }
 }

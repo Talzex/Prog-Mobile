@@ -42,10 +42,8 @@ class ImageAdapter2(c : Context, tilesArrayList: ArrayList<Tile>, level : Int) :
             tilesArrayList.add(emptytileposition,tile)
             change = true
             notifyDataSetChanged()
-
         }
          return change
-
     }
 
     private fun changePositionIsPossible(tile : Tile) : Boolean{

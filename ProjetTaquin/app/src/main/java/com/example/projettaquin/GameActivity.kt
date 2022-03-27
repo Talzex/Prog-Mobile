@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
+import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.Chronometer
 import android.widget.GridView
@@ -14,6 +15,7 @@ import kotlin.math.min
 
 class GameActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
+    final val RAMDOM_MOVEMENT = 100
     var size = -1
     var DrawableId = -1;
     var tilesArray  = ArrayList<Tile>()
@@ -26,10 +28,10 @@ class GameActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
     }
 
     private fun play() {
-
         simpleChronometer = findViewById<View>(R.id.simpleChronometer) as Chronometer
         simpleChronometer.format = getString(R.string.Duree) + " %s"
         simpleChronometer.start()
+
         val gridView = findViewById<GridView>(R.id.gridview)
         gridView.onItemClickListener = this
 
@@ -69,7 +71,7 @@ class GameActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     private fun RandomPosition(size : Int) {
         var i = 0
-        while(i < 2){
+        while(i < RAMDOM_MOVEMENT){
             if(imgAdapter.changePosition((0 until (size*size)).random())){
                 i++
             }
@@ -104,8 +106,6 @@ class GameActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
             intent.putExtra("level",size)
             startActivity(intent)
         }
-
-
     }
 
     fun checkWin() : Boolean{
@@ -119,8 +119,4 @@ class GameActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         }
         return ordonee;
     }
-
-
-
-
 }
