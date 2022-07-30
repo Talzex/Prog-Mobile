@@ -9,7 +9,7 @@ import android.widget.*
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener, View.OnClickListener {
     var level = -1
     var image = -1
-    private val imagesID : Array<Int> = arrayOf(R.drawable.android,R.drawable.html5,R.drawable.fq20,R.drawable.cascade)
+    private val imagesID : Array<Int> = arrayOf(R.drawable.afrique,R.drawable.paysage,R.drawable.fq20,R.drawable.cascade)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
